@@ -1,0 +1,19 @@
+2015-06-17 20:56:01 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cake_03.categorias' doesn't exist
+Stack Trace:
+#0 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'categorias', Array, Object(Cake\Database\Schema\Table))
+#1 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('categorias', Array)
+#2 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('categorias')
+#3 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 E:\xampp\htdocs\www\Cake03\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(194): Cake\ORM\Table->primaryKey()
+#5 E:\xampp\htdocs\www\Cake03\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 E:\xampp\htdocs\www\Cake03\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(95): Bake\Shell\Task\ModelTask->bake('Categorias')
+#7 E:\xampp\htdocs\www\Cake03\vendor\cakephp\bake\src\Shell\BakeShell.php(241): Bake\Shell\Task\ModelTask->main('Categorias')
+#8 [internal function]: Bake\Shell\BakeShell->all('categorias')
+#9 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Console\Shell.php(380): call_user_func_array(Array, Array)
+#10 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(204): Cake\Console\Shell->runCommand(Array, true)
+#11 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#12 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#13 E:\xampp\htdocs\www\Cake03\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+

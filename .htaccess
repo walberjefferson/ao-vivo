@@ -1,0 +1,16 @@
+#<IfModule mod_rewrite.c> 
+#RewriteEngine On 
+#RewriteBase /sub-diretorio/
+#RewriteCond %{REQUEST_FILENAME} !-f 
+#RewriteRule ^$ webroot/ [L] 
+#RewriteRule (.*) webroot/$1 [L] 
+#RewriteRule ^ index.php [L] 
+#</IfModule>
+
+
+#<Directory />
+#    Options Indexes FollowSymLinks MultiViews
+#    AllowOverride All
+#    Order Allow,Deny
+#    Allow from all
+#</Directory>

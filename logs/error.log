@@ -1,0 +1,2390 @@
+2015-06-18 01:32:44 Error: [InvalidArgumentException] Paginas is not associated with Categoria
+Request URL: /www/Cake03/paginas
+Stack Trace:
+#0 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(233): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\PaginasTable), 'Categoria', Array, Array)
+#1 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(338): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\PaginasTable))
+#2 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(317): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\PaginasTable))
+#3 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\ORM\Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\PaginasTable), true)
+#4 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\ORM\Query.php(638): Cake\ORM\Query->_transformQuery()
+#5 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(120): Cake\ORM\Query->sql()
+#6 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Database\Connection.php(220): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Database\Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#10 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#11 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#12 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(169): Cake\ORM\Query->all()
+#13 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Controller\Controller.php(641): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\PaginasTable), Array)
+#14 E:\xampp\htdocs\www\Cake03\src\Controller\PaginasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\PaginasTable))
+#15 [internal function]: App\Controller\PaginasController->index()
+#16 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#17 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 E:\xampp\htdocs\www\Cake03\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PaginasController))
+#19 E:\xampp\htdocs\www\Cake03\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-07-17 14:01:32 Error: Fatal Error (4): syntax error, unexpected ',' in [E:\xampp\htdocs\www\ss\src\Template\Videos\index.ctp, line 30]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:01:32 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ','
+Request URL: /www/ss/
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 30)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:19:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Lista could not be found.
+Exception Attributes: array (
+  'class' => 'Lista',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /www/ss/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 14:21:49 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:21:49 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:22:23 Error: Fatal Error (4): syntax error, unexpected '}' in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:22:24 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '}'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:22:53 Error: Fatal Error (4): syntax error, unexpected '}' in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:22:53 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '}'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:23:22 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:23:22 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:27:52 Error: Fatal Error (4): syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:27:52 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 6)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:28:45 Error: Fatal Error (4): syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:28:45 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 6)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:35:21 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting ',' or ';' in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:35:21 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting ',' or ';'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 8)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:36:16 Error: Fatal Error (1): Cannot use object of type Cake\ORM\ResultSet as array in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:36:16 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\ResultSet as array
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'E:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:36:30 Error: Fatal Error (1): Cannot use object of type Cake\ORM\ResultSet as array in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:36:31 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\ResultSet as array
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'E:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:37:53 Error: Fatal Error (4): syntax error, unexpected 'foreach' (T_FOREACH) in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:37:53 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 6)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:38:30 Error: Fatal Error (1): Cannot use object of type Cake\ORM\ResultSet as array in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:38:30 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\ResultSet as array
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'E:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:38:52 Error: Fatal Error (1): Cannot use object of type Cake\ORM\ResultSet as array in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:38:53 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\ResultSet as array
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'E:\\xampp\\htdocs...', 5)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:40:20 Error: Fatal Error (4): syntax error, unexpected 'foreach' (T_FOREACH) in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:40:21 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 6)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:40:46 Error: Fatal Error (4): syntax error, unexpected ''0'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:40:46 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''0'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 5)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:40:54 Error: Fatal Error (4): syntax error, unexpected ''1'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 5]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:40:54 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ''1'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 5)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:58:20 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 31]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:58:21 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 31)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:58:38 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:58:39 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 14:59:34 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 14:59:35 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:00:00 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:00:01 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:00:29 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:00:29 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:01:16 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:01:16 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:01:31 Error: Fatal Error (4): syntax error, unexpected ',' in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:01:32 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ','
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:01:38 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:01:39 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:02:10 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:02:10 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:02:30 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:02:30 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:02:36 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 27]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:02:36 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:03:21 Error: Fatal Error (1): Call to a member function find() on null in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:03:21 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'E:\\xampp\\htdocs...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 17:04:57 Error: Fatal Error (1): Cannot use object of type Cake\ORM\Query as array in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 17:04:58 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\ORM\Query as array
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'E:\\xampp\\htdocs...', 6)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 17:16:24 Error: [Cake\Core\Exception\MissingPluginException] Plugin Santana could not be found.
+Exception Attributes: array (
+  'plugin' => 'Santana',
+)
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Core\App.php(127): Cake\Core\Plugin::classPath('Santana')
+#1 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\View\View.php(1080): Cake\Core\App::path('Template', 'Santana')
+#2 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\View\View.php(909): Cake\View\View->_paths(NULL)
+#3 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\View\View.php(461): Cake\View\View->_getViewFileName(NULL)
+#4 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Controller\Controller.php(582): Cake\View\View->render(NULL, NULL)
+#5 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#6 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#7 E:\xampp\htdocs\www\ss\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 {main}
+
+
+2015-07-17 17:18:27 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 17]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 17:18:27 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 17)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 17:18:37 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 17]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 17:18:37 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 17)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 17:23:41 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 17]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 17:23:42 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 17)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 17:24:40 Error: Fatal Error (1): Using $this when not in object context in [E:\xampp\htdocs\www\ss\src\Controller\VideosController.php, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 17:24:41 Error: [Cake\Error\FatalErrorException] Using $this when not in object context
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Using $this whe...', 'E:\\xampp\\htdocs...', 8)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 17:26:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /www/ss/css/estilo.css
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 17:43:36 Error: Fatal Error (4): syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting ',' or ';' in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 17:43:36 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting ',' or ';'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 10)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 17:51:57 Error: [Cake\Controller\Exception\MissingActionException] Action VideosController::listar() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'VideosController',
+  'action' => 'listar',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /www/ss/videos/listar
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#2 E:\xampp\htdocs\www\ss\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-17 17:54:20 Error: Fatal Error (4): syntax error, unexpected ':' in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 6]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 17:54:20 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ':'
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'E:\\xampp\\htdocs...', 6)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:02:43 Error: Fatal Error (1): Cannot access empty property in [E:\xampp\htdocs\www\ss\src\Template\Videos\lista.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-17 15:02:44 Error: [Cake\Error\FatalErrorException] Cannot access empty property
+Request URL: /www/ss/videos/lista
+Stack Trace:
+#0 E:\xampp\htdocs\www\ss\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot access e...', 'E:\\xampp\\htdocs...', 8)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-17 15:51:17 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Request URL: /senhora_santana/
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(89): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(46): Cake\Database\Driver\Mysql->connect()
+#3 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(44): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Connection.php(319): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Table.php(428): Cake\Database\Connection->schemaCollection()
+#8 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Query.php(141): Cake\ORM\Table->schema()
+#9 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Query.php(123): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\VideosTable))
+#10 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Table.php(1220): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\VideosTable))
+#11 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Table.php(924): Cake\ORM\Table->query()
+#12 /home/cccistac/public_html/senhora_santana/src/Controller/VideosController.php(34): Cake\ORM\Table->find()
+#13 [internal function]: App\Controller\VideosController->lista()
+#14 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#15 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#16 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#17 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#19 {main}
+
+
+2015-07-17 15:52:39 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+Request URL: /senhora_santana/
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Driver/PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(89): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(46): Cake\Database\Driver\Mysql->connect()
+#3 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(44): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Database/Connection.php(319): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Table.php(428): Cake\Database\Connection->schemaCollection()
+#8 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Query.php(141): Cake\ORM\Table->schema()
+#9 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Query.php(123): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\VideosTable))
+#10 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Table.php(1220): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\VideosTable))
+#11 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/ORM/Table.php(924): Cake\ORM\Table->query()
+#12 /home/cccistac/public_html/senhora_santana/src/Controller/VideosController.php(34): Cake\ORM\Table->find()
+#13 [internal function]: App\Controller\VideosController->lista()
+#14 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#15 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#16 /home/cccistac/public_html/senhora_santana/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#17 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#19 {main}
+
+
+2015-07-17 22:03:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/estilo.css?url=css%2Festilo.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:03:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/estilo.css?url=css%2Festilo.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:04:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/cake.css?url=css%2Fcake.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:04:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/base.css?url=css%2Fbase.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:04:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/favicon.ico?url=favicon.ico
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:04:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/base.css?url=css%2Fbase.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:04:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/cake.css?url=css%2Fcake.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:08:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/estilo.css?url=css%2Festilo.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:08:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/cake.css?url=css%2Fcake.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:08:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/base.css?url=css%2Fbase.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:09:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/base.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:09:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/cake.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhora_santana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:09:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/cake.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 22:09:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhora_santana/css/base.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhora_santana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 22:18:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhorasantana/css/base.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhorasantana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhorasantana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:18:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhorasantana/css/cake.css
+Stack Trace:
+#0 /home/cccistac/public_html/senhorasantana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhorasantana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-17 22:18:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhorasantana/favicon.ico
+Stack Trace:
+#0 /home/cccistac/public_html/senhorasantana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 /home/cccistac/public_html/senhorasantana/index.php(16): require('/home/cccistac/...')
+#2 {main}
+
+
+2015-07-18 12:03:26 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/vendor/cakephp/cakephp/src/Event/EventManager.php on line 385 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:03:38 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/vendor/cakephp/cakephp/src/Event/EventManager.php on line 385 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:03:38 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:03:48 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:06:24 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:06:37 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:06:38 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:06:38 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:06:48 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:06:48 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:06:53 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/vendor/cakephp/cakephp/src/Event/EventManager.php on line 385 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:07:05 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:07:17 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:07:17 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 12:17:28 Warning: Warning (4096): Argument 1 passed to App\Controller\AppController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in /home/cccistac/public_html/senhorasantana/src/Controller/UsersController.php on line 18 and defined in [/home/cccistac/public_html/senhorasantana/src/Controller/AppController.php, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+App\Controller\AppController::beforeFilter() - APP/Controller/AppController.php, line 53
+App\Controller\UsersController::beforeFilter() - APP/Controller/UsersController.php, line 18
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-18 18:12:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Malta could not be found.
+Exception Attributes: array (
+  'class' => 'Malta',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhorasantana/malta
+Stack Trace:
+#0 /home/cccistac/public_html/senhorasantana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-18 18:12:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Malta could not be found.
+Exception Attributes: array (
+  'class' => 'Malta',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhorasantana/malta
+Stack Trace:
+#0 /home/cccistac/public_html/senhorasantana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-18 18:13:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Malta could not be found.
+Exception Attributes: array (
+  'class' => 'Malta',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhorasantana/malta
+Stack Trace:
+#0 /home/cccistac/public_html/senhorasantana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-18 18:13:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Malta could not be found.
+Exception Attributes: array (
+  'class' => 'Malta',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhorasantana/malta
+Stack Trace:
+#0 /home/cccistac/public_html/senhorasantana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-18 18:13:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Malta could not be found.
+Exception Attributes: array (
+  'class' => 'Malta',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhorasantana/malta
+Stack Trace:
+#0 /home/cccistac/public_html/senhorasantana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-18 18:13:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Malta could not be found.
+Exception Attributes: array (
+  'class' => 'Malta',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /senhorasantana/malta
+Stack Trace:
+#0 /home/cccistac/public_html/senhorasantana/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-20 16:34:30 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:34:31 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/models/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\Cache\Cache::read() - CORE/src/Cache/Cache.php, line 290
+Cake\Database\Schema\CachedCollection::describe() - CORE/src/Database/Schema/CachedCollection.php, line 59
+Cake\ORM\Table::schema() - CORE/src/ORM/Table.php, line 429
+Cake\ORM\Marshaller::one() - CORE/src/ORM/Marshaller.php, line 107
+Cake\ORM\Table::newEntity() - CORE/src/ORM/Table.php, line 1957
+DebugKit\Routing\Filter\DebugBarFilter::afterDispatch() - ROOT/vendor/cakephp/debug_kit/src/Routing/Filter/DebugBarFilter.php, line 189
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 389
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Routing\Dispatcher::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Error\ExceptionRenderer::_shutdown() - CORE/src/Error/ExceptionRenderer.php, line 351
+Cake\Error\ExceptionRenderer::_outputMessage() - CORE/src/Error/ExceptionRenderer.php, line 297
+Cake\Error\ExceptionRenderer::_outputMessage() - CORE/src/Error/ExceptionRenderer.php, line 303
+Cake\Error\ExceptionRenderer::render() - CORE/src/Error/ExceptionRenderer.php, line 172
+Cake\Error\ErrorHandler::_displayException() - CORE/src/Error/ErrorHandler.php, line 145
+Cake\Error\BaseErrorHandler::handleException() - CORE/src/Error/BaseErrorHandler.php, line 155
+[main] - [internal], line ??
+
+
+
+2015-07-20 16:34:31 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:34:57 Warning: Warning (2): mkdir(): Permission denied in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 417]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+mkdir - [internal], line ??
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 417
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:34:57 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:34:58 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:35:23 Warning: Warning (2): mkdir(): Permission denied in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 417]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+mkdir - [internal], line ??
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 417
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:35:23 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:35:24 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:36:27 Warning: Warning (2): mkdir(): Permission denied in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 417]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+mkdir - [internal], line ??
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 417
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:36:27 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:36:28 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:37:25 Warning: Warning (2): mkdir(): Permission denied in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 417]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+mkdir - [internal], line ??
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 417
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:37:25 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:37:26 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:38:06 Warning: Warning (2): mkdir(): Permission denied in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 417]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+mkdir - [internal], line ??
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 417
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:38:06 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:38:07 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:38:17 Warning: Warning (2): mkdir(): Permission denied in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 417]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+mkdir - [internal], line ??
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 417
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+Cake\Controller\Component\AuthComponent::_setDefaults() - CORE/src/Controller/Component/AuthComponent.php, line 434
+Cake\Controller\Component\AuthComponent::startup() - CORE/src/Controller/Component/AuthComponent.php, line 265
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 477
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:38:17 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+Cake\Controller\Component\AuthComponent::_setDefaults() - CORE/src/Controller/Component/AuthComponent.php, line 434
+Cake\Controller\Component\AuthComponent::startup() - CORE/src/Controller/Component/AuthComponent.php, line 265
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 477
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:38:17 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', '_cake_core_', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('cake')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(434): __d('cake', 'You are not aut...')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(265): Cake\Controller\Component\AuthComponent->_setDefaults()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(477): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#14 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#16 {main}
+
+
+2015-07-20 16:39:29 Warning: Warning (2): mkdir(): Permission denied in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 417]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+mkdir - [internal], line ??
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 417
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:39:29 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:39:30 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:39:56 Warning: Warning (2): mkdir(): Permission denied in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 417]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+mkdir - [internal], line ??
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 417
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:39:56 Warning: Warning (512): CACHEpersistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:39:56 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:40:02 Warning: Warning (2): mkdir(): Permission denied in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 417]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+mkdir - [internal], line ??
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 417
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:40:02 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:40:02 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:42:33 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:42:34 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:43:42 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:43:42 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:43:52 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:43:52 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: /
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:46:18 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:46:18 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: http:/senhorasantana.dev:8888/
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:46:34 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:46:34 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: http:/senhorasantana.dev:8888/
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:46:40 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:46:40 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: http:/senhorasantana.dev:8888/
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
+2015-07-20 16:52:07 Warning: Warning (512): /vagrant/vhosts/senhorasantana/public/tmp/cache/persistent/ is not writable in [/vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Engine/FileEngine.php, line 425]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Cache\Engine\FileEngine::_active() - CORE/src/Cache/Engine/FileEngine.php, line 425
+Cake\Cache\Engine\FileEngine::init() - CORE/src/Cache/Engine/FileEngine.php, line 101
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+DebugKit\Cache\Engine\DebugEngine::init() - ROOT/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php, line 79
+Cake\Cache\CacheRegistry::_create() - CORE/src/Cache/CacheRegistry.php, line 89
+Cake\Core\ObjectRegistry::load() - CORE/src/Core/ObjectRegistry.php, line 89
+Cake\Cache\Cache::_buildEngine() - CORE/src/Cache/Cache.php, line 135
+Cake\Cache\Cache::engine() - CORE/src/Cache/Cache.php, line 165
+Cake\I18n\I18n::translators() - CORE/src/I18n/I18n.php, line 73
+Cake\I18n\I18n::translator() - CORE/src/I18n/I18n.php, line 138
+__d - CORE/src/I18n/functions.php, line 81
+DebugKit\Panel\TimerPanel::DebugKit\Panel\{closure}() - ROOT/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php, line 54
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE/src/Controller/Controller.php, line 473
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+require - ROOT/webroot/index.php, line 37
+[main] - ROOT/index.php, line 16
+
+
+
+2015-07-20 16:52:08 Error: [RuntimeException] Cache engine Cake\Cache\Engine\FileEngine is not properly configured.
+Request URL: http:/senhorasantana.dev:8888/
+Stack Trace:
+#0 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create('Cake\Cache\Engi...', 'spies', Array)
+#1 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Cache/Engine/DebugEngine.php(79): Cake\Core\ObjectRegistry->load('spies', Array)
+#2 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/CacheRegistry.php(89): DebugKit\Cache\Engine\DebugEngine->init(Array)
+#3 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(89): Cake\Cache\CacheRegistry->_create(Object(DebugKit\Cache\Engine\DebugEngine), '_cake_core_', Array)
+#4 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(135): Cake\Core\ObjectRegistry->load('_cake_core_', Array)
+#5 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Cache/Cache.php(165): Cake\Cache\Cache::_buildEngine('_cake_core_')
+#6 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(73): Cake\Cache\Cache::engine('_cake_core_')
+#7 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/I18n.php(138): Cake\I18n\I18n::translators()
+#8 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/I18n/functions.php(81): Cake\I18n\I18n::translator('debug_kit')
+#9 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/debug_kit/src/Panel/TimerPanel.php(54): __d('debug_kit', 'Controller init...')
+#10 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(385): DebugKit\Panel\TimerPanel->DebugKit\Panel\{closure}(Object(Cake\Event\Event))
+#11 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Object(Closure), Object(Cake\Event\Event))
+#12 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#13 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Controller/Controller.php(473): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#14 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(109): Cake\Controller\Controller->startupProcess()
+#15 /vagrant/vhosts/senhorasantana/public/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\VideosController))
+#16 /vagrant/vhosts/senhorasantana/public/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 /vagrant/vhosts/senhorasantana/public/index.php(16): require('/vagrant/vhosts...')
+#18 {main}
+
+
